@@ -33,5 +33,5 @@ Next to the change of account data, there is a tab, after clicking on it, we wil
 ![](./images/formularz%20dodania%20nowego%20samochodu.png)
 ## The resource does not exist
 If we try to download a resource that does not exist, i.e. enter a link that the application is unable to handle, a 404 page will be displayed.
-![](./images/moj%20profil%20zmiana%20danych.png)
+![](./images/404.png)
 
