@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Online car rental project using ReactJS
+## Brief description of the project
+The project is a React application. 
+I used bootstrap and css modules for styling. 
+For testing, I used JEST and the React Testing Library. 
+For routing, I used the react-routing-dom library.
+Most of the components are functional components. I used class components to catch errors.
+The site uses firebase real time datebase, it is NO SQL database. Newly added cars and registered users are placed there.
+## How to run a project
+Download the project using git clone or zip
+In the terminal, navigate to the project root directory
+type npm install
+type npm start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Home
+This is the home page. It shows available cars. At the top there is a header with a search engine that allows you to sort cars by brand. In addition, there is a button next to it that allows you to change the theme. Below is the navigation that allows you to go to the registration and login page.
+![](./images/strona%20glowna.png)
 
-## Available Scripts
+## Registration
+Registration form with email and password validation. Allows you to register a new user.
+![](./images/formularz%20rejestracji.png)
 
-In the project directory, you can run:
+## Login
+Login form with email and password validation. The account must be in the firebase database. The token is stored in local storage thanks to which we are still logged in even after refreshing the page.
+![](./images/formularz%20logowania.png)
 
-### `yarn start`
+## Change of account details
+After logging in, a link to my profile pages appears in the navigation bar. Here you can change your account details, change your e-mail address or password.
+![](./images/moj%20profil%20zmiana%20danych.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Adding a new car
+Next to the change of account data, there is a tab, after clicking on it, we will be redirected to the page with the form for adding a new car to the database.
+![](./images/formularz%20dodania%20nowego%20samochodu.png)
+## The resource does not exist
+If we try to download a resource that does not exist, i.e. enter a link that the application is unable to handle, a 404 page will be displayed.
+![](./images/moj%20profil%20zmiana%20danych.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -24,3 +24,5 @@ yarn-error.log*
 .vscode
 .eslintcache
 .firebase/*
+
+# src/axios-auth.js
